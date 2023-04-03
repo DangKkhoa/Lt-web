@@ -13,6 +13,7 @@
     
 </head>
 <body>
+    
     <header>
         <nav>
             <div class="logo-container">
@@ -29,8 +30,8 @@
             </div>
 
             <div class="profile-container">
-                <div class="image-container">
-                    <img src="imags/icon-256x256.png" alt="">
+                <div class="profile-logo">
+                    <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="dropdown-options">
                     <button id="btn"><i class="fa-solid fa-caret-down"></i></button>
@@ -39,9 +40,10 @@
                         <a href="#">Dang nhap</a>
                         <a href="#">Dang ky</a>
                     </div>
-                    <script>
+                    <script >
                         var clicknum = 0;
                         var options = document.getElementsByClassName('options')[0];
+
                         function showclickNum() {
                             clicknum += 1;
                             if(clicknum % 2 === 0){
@@ -50,20 +52,49 @@
                             else {
                                 options.style.display = "block";
                             }
-                            console.log(clicknum);
-                            
+                            // console.log(clicknum);
                         }
                         let action = document.getElementById("btn");
                         action.addEventListener('click', showclickNum);
-                        
-                        
-
-
                     </script>
                 </div>
                 
             </div>
         </nav>
+        
     </header>
+
+    <div class="sidebar">
+        
+        <div class="side-container">
+            <div class="side-content home">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+            </div>
+            <div class="side-content search">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="side-content icon group">
+                <a href="#"><i class="fa-solid fa-users"></i></a>
+            </div>
+            <div class="side-content favorite">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+            </div>
+            <div class="side-content fanpage">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <script src="index.js"></script>
+        </div>
+        
+    </div>
+
+    <main>
+        <div class="container">
+            
+            <div class="container-top" style="height: 100%; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%,rgb(21, 20, 20)), url('images/maxresdefault.jpg');">
+
+            </div>
+            
+        </div> 
+    </main>
 </body>
 </html>
